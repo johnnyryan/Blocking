@@ -18,11 +18,11 @@
 # users recover. They are pre-allowlisted in the companion file.
 # ======================================================================
 
-# --- Suicide encouragement forum (most well-documented active site) ---
+# --- A. Suicide-encouragement forum (most well-documented active site) ---
 # UK ISPs (Sky, BT, Virgin, TalkTalk) blocked this on default safety
 # controls in 2024 following BBC investigation. Linked to multiple
 # documented suicide deaths. NYU JLPP, US Rep Trahan briefing, Ofcom
-# investigation, Wikipedia coverage.
+# investigation (provisional breach finding 2026), Wikipedia coverage.
 sanctioned-suicide.net
 www.sanctioned-suicide.net
 sanctioned-suicide.org
@@ -30,6 +30,85 @@ www.sanctioned-suicide.org
 sanctioned-suicide.com
 www.sanctioned-suicide.com
 
-# --- Specific subdomains of legitimate platforms hosting NSSI content ---
+# --- B. Suicide-method information sites ---
+# lostallhope.com explicitly catalogs methods; subject of PBS NewsHour
+# 2024 segment, CBC News reporting, multiple Change.org takedown
+# petitions. suicidemethods.net named in BMJ Biddle et al. 2008
+# (PMC2292278) Table 2 as one of three most-frequent dedicated
+# pro-suicide sites.
+lostallhope.com
+www.lostallhope.com
+suicidemethods.net
+www.suicidemethods.net
+
+# --- C. Alt.suicide.holiday (ASH) lineage ---
+# ash.notearthday.org hosts an archive of the ASH website (~2002),
+# including the "Methods File" (per Wikipedia Alt.suicide.holiday).
+# ashspace.org is the current portal indexing ASH-related resources.
+# ashbusstop.org hosted the ASH FAQ and "How to write a suicide note"
+# guide. Documented in Wikipedia, Daily Dot ASH retrospective.
+ash.notearthday.org
+ashspace.org
+www.ashspace.org
+archive.ashspace.org
+ashbusstop.org
+www.ashbusstop.org
+
+# --- D. German-language suicide forums ---
+# Named in archived German "Suizidforen im Internet" listings and
+# magpiebridge.net "Suicide Fora on the Internet" survey as
+# pro-suicidal forums (period: late 2000s–2010s; some still resolve).
+selbstmordforum.de
+www.selbstmordforum.de
+selbstmordhilfe.de
+www.selbstmordhilfe.de
+freitod.de
+www.freitod.de
+
+# --- E. Specific subdomains of legitimate platforms hosting NSSI content ---
 # (Block subdomain only — parent platform is too broad to block here.)
 icut.livejournal.com
+
+# --- F. Additional English-language pro-suicide / NSSI sites ---
+# Sources: Biddle et al. 2008 BMJ Table 2 (PMC2292278), Wikipedia
+# Church of Euthanasia, JuniorDr "Killer Net", ashspace.org index,
+# Daily Dot ASH retrospective.
+
+# churchofeuthanasia.org — Wikipedia documented; published
+# "How to Kill Yourself" guide (removed 2003 after a death).
+churchofeuthanasia.org
+www.churchofeuthanasia.org
+
+# extremeriver.com — Biddle 2008 BMJ Table 2 (most-frequent dedicated
+# pro-suicide site at time of study). Now redirects to a domain-broker
+# sale page; original content gone but defensive pre-block retained
+# in case the domain is bought and revived for the same purpose.
+extremeriver.com
+www.extremeriver.com
+
+# Removed after content verification (2026-05-03):
+#   23nlpeople.com — now hosts Andrew T. Austin's NLP/IEMT therapy
+#   practice (Somerset, England). Domain has been repurposed since
+#   the 2008 Biddle citation; current content is unrelated to
+#   pro-suicide.
+
+# selfharm.pics — image-sharing community for fresh self-injury photos.
+selfharm.pics
+
+# Additional ASH / Alt.suicide.holiday infrastructure
+people.ashspace.org
+irc.ashbusstop.org
+
+# --- G. Historical NXDOMAIN — defensive pre-block ---
+# Currently do not resolve; pre-blocked so revival or cybersquatting
+# by the same operator network is caught instantly.
+# ash.spaink.net   — original ASH mirror by Karin Spaink (Church of Euthanasia)
+# ash.xanthia.com  — original ASH website host 1993–2002
+# ashbusstop.net   — ASH-bus-stop variant
+# selbstmord-forum.at, suizid-area.net — German pro-suicide forums
+#                     (magpiebridge.net "Suizidforen im Internet" survey)
+ash.spaink.net
+ash.xanthia.com
+ashbusstop.net
+selbstmord-forum.at
+suizid-area.net

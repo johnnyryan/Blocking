@@ -27,8 +27,8 @@
 #     to avoid breaking legitimate use. Block them separately if desired.
 # ======================================================================
 
-# --- A. Currently active dedicated forums/sites ---
-# (Verified via 2024–2026 public reporting. Run dig before deploying.)
+# --- A. Currently active dedicated standalone forums/sites ---
+# (Verified via 2024–2026 public reporting + DNS resolution.)
 myproana.com
 www.myproana.com
 edsupportforum.com
@@ -41,12 +41,20 @@ www.mianaplace.com
 forum.mianaplace.com
 skinnygossip.com
 www.skinnygossip.com
+prettythin.com
+www.prettythin.com
+houseofthin.com
+www.houseofthin.com
+wayofperfection.org
+www.wayofperfection.org
 proanaskinnyme.wixsite.com
+pro-ana-italia.it
 
 # --- B. Historical sites named in academic literature ---
-# Many likely defunct but pre-blocked in case of revival.
+# Pre-blocked in case of revival.
 # Sources: Lutz "Thin Commandments" (Saint Mary's College),
-#          "e-Ana and e-Mia" (AJPH 2010, PMC2901299).
+#          "e-Ana and e-Mia" (AJPH 2010, PMC2901299),
+#          Borzekowski 2010, Bond 2012, Newsweek 2016.
 ceruleanbutterfly.com
 www.ceruleanbutterfly.com
 gloomsday.net
@@ -57,3 +65,164 @@ anorexics.net
 www.anorexics.net
 shiveringnaked.org
 www.shiveringnaked.org
+
+# --- C. Non-English dedicated forum subdomains ---
+# Sources: Trento2018, Linkiesta 2016 (Italian);
+#          ACAB / Spanish Wikipedia (Spanish);
+#          journals.viamedica.pl, Polish Wikipedia (Polish);
+#          archived French pro-ana catalog forums.
+# These are subdomains on shared forum hosts (kanak.fr, forumactif,
+# blogfree.net, 4ra.pl, forumforever) — only the specific subdomain
+# is blocked, not the parent platform.
+
+# French
+pro-ana.kanak.fr
+pro-ana-mia4ever.kanak.fr
+pro-ana.forumactif.org
+realproana.forumactif.com
+pro-ana-forever.forumforever.com
+
+# Italian
+proana.blogfree.net
+proana.aliens.blogfree.net
+ioproana.blogfree.net
+promia.blogfree.net
+lamiastoriaproana.blogfree.net
+
+# Polish
+porcelanowemotyle.4ra.pl
+motylkowyswiat.4ra.pl
+midnight-butterflies-pro-ana.4ra.pl
+kordialne.4ra.pl
+
+# --- D. Pro-ana blogs on shared blog hosts ---
+# Block individual blogs only — Weebly/WordPress.com/Blogspot themselves
+# are out of scope (shared infrastructure with millions of legitimate
+# blogs). Sources: Wiley 2024, ResearchGate "Eating Disorders and the
+# Internet" (Italian study), search-engine indexing of self-described
+# pro-ana content.
+
+# Weebly
+givemethin.weebly.com
+anonproana.weebly.com
+
+# WordPress.com
+emilyandanaforever.wordpress.com
+proana4life2017.wordpress.com
+thebutterflyhouseblog.wordpress.com
+anaismyreligion.wordpress.com
+thehiddenbutterflysite.wordpress.com
+hungrigesleben.wordpress.com
+
+# Blogspot
+anaregzig.blogspot.com
+thin-is-in-2010.blogspot.com
+proanahungerdiary.blogspot.com
+lovetobeperfect.blogspot.com
+zottelkind.blogspot.com
+secretsofanabutterfly.blogspot.com
+
+# --- E. English-language pro-ana keyword domains ---
+# Active or parked-but-registered (DNS resolves). Many return 0.0.0.0
+# (sinkhole/parking) — included for defensive pre-blocking against
+# revival or cybersquatting by the same operator network.
+# Sources: Borzekowski et al. 2010 (PMC2901299), Bond 2012, Boepple
+# & Thompson 2014 (Int J Eat Disord), Cobb 2017 (Med Humanit), Wiley
+# 2024 (pro-anorexia coaches), Chancellor 2016 #thyghgapp.
+
+# Thinspiration / thinspo keyword cluster
+prothinspo.com
+thinspiration.com
+pro-thinspiration.com
+pro-thinspo.com
+thinspo.org
+thinspodaily.com
+thinspo4all.com
+thinspirational.com
+thinspirationworld.com
+thinspirations.org
+thinspowave.com
+4thinspo.com
+skinnythinspo.com
+angelthinspo.com
+unhealthythinspiration.com
+
+# Pro-ana / pro-mia keyword cluster
+pro-ana.org
+pro-ana.net
+pro-ana-mia.com
+pro-ana-nation.com
+pro-ana-buddies.com
+proanorexia.com
+proanorexianet.com
+proanaforum.com
+proanamia.com
+proanaheaven.com
+proanasites.com
+proanablog.com
+proanaland.com
+proanapride.com
+proanatips.org
+proanagrrl.com
+proanawebring.com
+proanadiets.com
+proanalifestyleforever.com
+xanga-proana.com
+coldcoffeeproana.com
+prettyflyforaproana.com
+
+# Pro-ana coaching landing pages (Wiley 2024 — "pro-anorexia coaches")
+angelicproana.com
+chasingperfectionproana.com
+skinny4lifeproana.com
+livingproana.com
+
+# Body-goal / ana-personification standalone domains
+4ana.com
+anatips.org
+anaring.com
+thyghgapp.com
+thyghgap.com
+anaboot.com
+anaboot.camp
+
+# Bonespiration cluster (Talbot et al. 2017, J Eat Disord)
+bonespiration.com
+bonespirational.com
+bonespo.com
+
+# MyProAna mirrors / variants
+mpaforum.com
+
+# Removed after content verification (2026-05-03):
+#   anasphere.com         — aerospace company (atmospheric sensors)
+#   pursuingperfection.org — document formatting business
+#   bonesonly.com         — Minecraft YouTuber/streamer brand
+#   stickfigures.org      — unrelated to pro-ana (stick-figure animation)
+#   anatools.com          — name belongs to analytics/SDK projects
+# Originally proposed by an agent citing 2010-era academic samples;
+# verification showed none had any pro-ana content.
+
+# --- F. Historical pro-ana NXDOMAIN — defensive pre-block ---
+# Currently NXDOMAIN; pre-blocked so revival/cybersquatting is caught
+# instantly. Sources: Borzekowski 2010, Bond 2012, Lutz "Thin
+# Commandments", Csipke & Horne 2007 (Eur Eat Disord Rev), Fox/Ward/
+# Rial 2005 (Sociol Health Illn), BuzzFeed 2014 "Hunger Blogs",
+# Vice 2014 "Pro-Ana Nation".
+pro-anorexia.com
+anorexicnationonline.com
+starvingforperfection.com
+anorexicgoddess.com
+dyingtobethin.net
+ana-mia.com
+ana-mia.org
+anaforums.com
+thinforums.com
+anasanctuary.com
+thinhaven.org
+starveyourselfsexy.com
+anaslittlesecret.com
+skinniestbitch.com
+anagrrl.com
+fly-to-perfection.com
+pro-ana.aceboard.fr

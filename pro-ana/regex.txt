@@ -50,8 +50,79 @@ thighgap
 thinstagram
 ricecaketwt
 
-# Common evasion misspellings (Georgia Tech research)
+# "fatspo" — reverse thinspiration. arXiv 2412.15721, Wiktionary edtwt.
+fatspo
+
+# Common evasion misspellings (Georgia Tech research; Chancellor 2016)
 th1n5p0
 thynspo
+thynspiration
 anorekic
 thyghgap
+
+# Newer ED-community handles (Twitter/Tumblr clusters).
+# Sources: arXiv 2412.15721 "Safe Spaces or Toxic Places?"; Dazed
+# Digital "Inside edtwt"; Wiktionary edtwt entry. Both are coined
+# non-words with effectively zero collision risk.
+edtwt
+edblr
+
+# Newly-added dedicated sites (also catch typosquats / mirrors)
+houseofthin
+wayofperfection
+mpaforum
+
+# Body-goal challenge vocabulary
+# Sources: BBC 2015–2016 (collarbone challenge, A4 waist), Time 2014
+# (bikini bridge), Pedestrian.tv 2019 (boxgap), JMIR 2025 (hipdips)
+boxgap
+hipdips
+bikinibridge
+a4waist
+iphonelegs
+collarbonechallenge
+
+# Diet-protocol vocabulary
+abcdiet
+
+# Ana-personification compounds
+# Sources: Chancellor 2016 (Tumblr), Cobb 2017 Med Humanit (Pinterest),
+# Wiley 2024 (pro-anorexia coaches). Bare "ana" is excluded due to
+# heavy collision (Anastasia, banana, analytics); compounds are
+# unambiguous.
+anabuddy
+anacoach
+anasister
+anafamily
+anapact
+anachallenge
+anagoddess
+anaqueen
+anaprincess
+anaformyself
+
+# Mia-personification compounds (parallels above for bulimia)
+miabuddy
+miacoach
+miasister
+miafamily
+
+# Skinny-compound vocabulary
+# Bare "skinny" is excluded (skinnyJEANS, skinnyTASTE, skinnyPOP);
+# specific compounds documented in pro-ana communities.
+skinnyforever
+skinnydrip
+skinnybones
+skinnyqueen
+skinnychecks
+
+# Numeric/leet evasion variants documented in research
+# Sources: Chancellor 2016 #thyghgapp; Pedestrian.tv 2019
+an0rexia
+anorex1a
+bul1mia
+bvlimia
+7hinspo
+thnspo
+thiinspo
+thinsp0

@@ -50,5 +50,31 @@ sanctioned-suicide
 secretsociety123
 mysecretfamily
 
-# Algospeak (use with caution — verify with `pihole -q` after deploy)
+# Algospeak (use with caution — verify with `pihole -q` after deploy).
+# "unalive" / "unaliving" / "sewerslide" — euphemisms for suicide.
+# Sources: Algospeak Wikipedia; Aleksic 2025; Lookingbill & Le 2024
+# NSSI/TikTok study; JMIR 2025 thematic analysis.
 unalive
+unaliving
+sewerslide
+
+# Self-harm Twitter cluster handle. Source: NCRI/Rutgers Miller Center
+# Twitter Report 2022; Frontiers in Digital Health 2025 NSSI/TikTok.
+# Coined non-word — zero English collision risk.
+shtwt
+
+# Newly-added dedicated sites (also catch typosquats / mirrors)
+lostallhope
+suicidemethods
+ashbusstop
+ashspace
+churchofeuthanasia
+extremeriver
+
+# Suicidal-ideation phrases as compound words
+# Sources: JMIR 2025 thematic analysis; Frontiers in Digital Health
+# 2025 NSSI/TikTok; Aleksic 2025 algospeak monograph.
+# Bare "kms"/"kys" excluded (under 6 chars, collision risk).
+kysmyself
+endmylife
+wanttodie
