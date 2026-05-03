@@ -1,0 +1,59 @@
+# Pi-hole blocklist — Pro-Ana / Pro-Mia / Thinspo
+# ----------------------------------------------------------------------
+# Purpose : Block dedicated pro-anorexia, pro-bulimia, and thinspiration
+#           websites at the DNS level.
+# Format  : Plain domain list (one domain per line). Compatible with
+#           Pi-hole Adlists, AdGuard Home, dnsmasq, /etc/hosts (after
+#           prefixing 0.0.0.0).
+# Updated : 2026-05-03
+# License : Public domain / CC0 — use freely.
+#
+# How to import into Pi-hole:
+#   1. Web UI → Adlists → Add this file's URL (if hosted) or contents
+#      (if pasted into a custom list at /etc/pihole/custom.list).
+#   2. pihole -g     # update gravity
+#   3. pihole -q myproana.com    # confirm match
+#
+# Companion files in this directory:
+#   - regex.txt      (regex rules for the same category)
+#   - allowlist.txt  (recovery/treatment whitelist)
+#   - README.md      (usage + caveats)
+#
+# Limitations:
+#   - DNS blocking is whole-domain. Cannot block individual subreddits,
+#     Tumblr blogs, IG accounts, Discord servers, or Telegram channels.
+#   - Major social platforms (reddit.com, x.com, tumblr.com, etc.) host
+#     significant pro-ana content but are intentionally NOT blocked here
+#     to avoid breaking legitimate use. Block them separately if desired.
+# ======================================================================
+
+# --- A. Currently active dedicated forums/sites ---
+# (Verified via 2024–2026 public reporting. Run dig before deploying.)
+myproana.com
+www.myproana.com
+edsupportforum.com
+www.edsupportforum.com
+fadingobsessions.com
+www.fadingobsessions.com
+my.fadingobsessions.com
+mianaplace.com
+www.mianaplace.com
+forum.mianaplace.com
+skinnygossip.com
+www.skinnygossip.com
+proanaskinnyme.wixsite.com
+
+# --- B. Historical sites named in academic literature ---
+# Many likely defunct but pre-blocked in case of revival.
+# Sources: Lutz "Thin Commandments" (Saint Mary's College),
+#          "e-Ana and e-Mia" (AJPH 2010, PMC2901299).
+ceruleanbutterfly.com
+www.ceruleanbutterfly.com
+gloomsday.net
+www.gloomsday.net
+plagueangel.net
+www.plagueangel.net
+anorexics.net
+www.anorexics.net
+shiveringnaked.org
+www.shiveringnaked.org

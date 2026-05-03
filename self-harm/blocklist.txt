@@ -1,0 +1,35 @@
+# Pi-hole blocklist — Self-Harm / Pro-Self-Injury / Suicide Encouragement
+# ----------------------------------------------------------------------
+# Purpose : Block dedicated pro-self-harm, self-injury glorification,
+#           and suicide-encouragement websites at the DNS level.
+# Format  : Plain domain list (one domain per line). Compatible with
+#           Pi-hole Adlists, AdGuard Home, dnsmasq, /etc/hosts.
+# Updated : 2026-05-03
+# License : Public domain / CC0
+#
+# Companion files in this directory:
+#   - regex.txt      (regex rules)
+#   - allowlist.txt  (recovery/help whitelist)
+#   - README.md      (usage + caveats)
+#
+# IMPORTANT — Recovery sites are NOT on this list. Sites like
+# recoveryourlife.com, 7cups.com, healthyplace.com, thesira.org, and
+# selfinjury.bctr.cornell.edu use the same vocabulary but exist to help
+# users recover. They are pre-allowlisted in the companion file.
+# ======================================================================
+
+# --- Suicide encouragement forum (most well-documented active site) ---
+# UK ISPs (Sky, BT, Virgin, TalkTalk) blocked this on default safety
+# controls in 2024 following BBC investigation. Linked to multiple
+# documented suicide deaths. NYU JLPP, US Rep Trahan briefing, Ofcom
+# investigation, Wikipedia coverage.
+sanctioned-suicide.net
+www.sanctioned-suicide.net
+sanctioned-suicide.org
+www.sanctioned-suicide.org
+sanctioned-suicide.com
+www.sanctioned-suicide.com
+
+# --- Specific subdomains of legitimate platforms hosting NSSI content ---
+# (Block subdomain only — parent platform is too broad to block here.)
+icut.livejournal.com

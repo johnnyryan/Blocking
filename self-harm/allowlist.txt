@@ -1,0 +1,44 @@
+# Pi-hole allowlist — Self-Harm recovery & crisis support resources
+# ----------------------------------------------------------------------
+# Purpose : Ensure recovery/crisis-support domains remain reachable
+#           even though they use vocabulary the regex blocklist matches.
+# Format  : Plain domain list. Import via Pi-hole Web UI →
+#           Group Management → Domains → Whitelist.
+# Updated : 2026-05-03
+# ======================================================================
+
+# Recovery communities (use "self-harm" / "self-injury" in domain or path)
+recoveryourlife.com
+www.recoveryourlife.com
+selfinjury.bctr.cornell.edu
+thesira.org
+www.thesira.org
+healthyplace.com
+www.healthyplace.com
+7cups.com
+www.7cups.com
+
+# Crisis support
+988lifeline.org
+www.988lifeline.org
+crisistextline.org
+www.crisistextline.org
+samaritans.org
+www.samaritans.org
+iasp.info
+www.iasp.info
+thetrevorproject.org
+www.thetrevorproject.org
+
+# Mental health information
+nami.org
+www.nami.org
+namimass.org
+www.namimass.org
+nimh.nih.gov
+www.nimh.nih.gov
+mind.org.uk
+www.mind.org.uk
+
+# Recovery-oriented research
+nssiinfo.tumblr.com

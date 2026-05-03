@@ -1,0 +1,54 @@
+# Pi-hole regex blocklist — Self-Harm / Pro-Self-Injury
+# ----------------------------------------------------------------------
+# Purpose : Catch newly-registered or unlisted pro-self-harm domains
+#           by matching characteristic vocabulary in the FQDN.
+# Format  : One PCRE regex per line. Pi-hole 5+ matches against the full
+#           domain being queried. Lines starting with # are comments.
+# Import  : Web UI → Group Management → Domains → RegEx filter.
+# Updated : 2026-05-03
+#
+# Tuning notes — what is INTENTIONALLY EXCLUDED and why:
+#   - Bare codewords like "cat", "blithe", "beans", "Addie", "Annie",
+#     "Olive", "Sue" (from "Secret Society 123" research) are NOT
+#     included — they collide with millions of innocent domains.
+#   - "$h", "s/h", "sh" — special characters can't appear in DNS labels;
+#     bare "sh" collides with shell, share, ship, shop, etc.
+#   - "cutting", "cuts", "cutter", "blade" — far too generic.
+#   - "nssi" alone — too short, risk of collision.
+#   - "unalive" — becoming common algospeak; included as it is rarely
+#     used in legitimate domain names.
+#
+# Recovery sites using these words (recoveryourlife.com, healthyplace
+# .com, selfinjury.bctr.cornell.edu, thesira.org, 7cups.com) are
+# pre-allowlisted in allowlist.txt.
+# ======================================================================
+
+# Direct self-harm vocabulary
+selfharm
+self-harm
+selfinjury
+self-injury
+selfmutilation
+self-mutilation
+
+# "Pro-" prefixed self-harm
+pro-selfharm
+pro-self-harm
+proselfharm
+
+# "Tips" / "blog" combinations (pro-content signals)
+selfharmtips
+selfinjurytips
+selfharmblog
+
+# Documented dedicated forum
+sanctionedsuicide
+sanctioned-suicide
+
+# Documented coded community names ("Secret Society 123" research,
+# Journal of Adolescent Health 2016)
+secretsociety123
+mysecretfamily
+
+# Algospeak (use with caution — verify with `pihole -q` after deploy)
+unalive

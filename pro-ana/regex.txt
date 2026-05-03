@@ -1,0 +1,57 @@
+# Pi-hole regex blocklist — Pro-Ana / Pro-Mia / Thinspo
+# ----------------------------------------------------------------------
+# Purpose : Catch newly-registered or unlisted pro-ana/thinspo domains
+#           by matching characteristic vocabulary in the FQDN.
+# Format  : One PCRE regex per line. Pi-hole 5+ matches against the full
+#           domain being queried. Lines starting with # are comments.
+# Import  : Web UI → Group Management → Domains → RegEx filter →
+#           paste each pattern as its own row.
+#           OR via CLI: pihole --regex 'PATTERN'
+# Updated : 2026-05-03
+#
+# Tuning notes:
+#   - Patterns are unanchored substring matches against the full FQDN.
+#   - "ana" and "mia" alone are NOT used (would catch Anastasia, Miami,
+#     Mia Khalifa, etc.). All patterns require longer, more specific
+#     vocabulary.
+#   - Known minor risk: "pro-ana" can collide with "pro-anal*"-prefixed
+#     domains (e.g. pro-analytics.com). If you hit a false positive, add
+#     the legitimate domain to allowlist.txt.
+#   - Test before deploying:
+#       grep -E -f regex.txt <<< "yourdomain.com"
+# ======================================================================
+
+# Core ideology terms
+proana
+pro-ana
+promia
+pro-mia
+proanorexia
+probulimia
+
+# "-spo" / inspiration family
+thinspo
+thinspiration
+bonespo
+bonespiration
+deathspo
+meanspo
+skinnyspo
+sweetspo
+
+# Community + behavior terms
+skinnygossip
+fadingobsession
+mianaplace
+anaboot
+anatips
+wannarex
+thighgap
+thinstagram
+ricecaketwt
+
+# Common evasion misspellings (Georgia Tech research)
+th1n5p0
+thynspo
+anorekic
+thyghgap

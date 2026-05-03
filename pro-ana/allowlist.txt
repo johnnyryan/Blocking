@@ -1,0 +1,39 @@
+# Pi-hole allowlist — Eating disorder recovery & treatment resources
+# ----------------------------------------------------------------------
+# Purpose : Ensure recovery/help domains remain reachable even if a
+#           regex rule (here or upstream) accidentally catches them.
+# Format  : Plain domain list. Import via Pi-hole Web UI →
+#           Group Management → Domains → Whitelist.
+# Updated : 2026-05-03
+# ======================================================================
+
+# United States
+nationaleatingdisorders.org
+www.nationaleatingdisorders.org
+neda.org
+anad.org
+www.anad.org
+eatingdisorderhope.com
+www.eatingdisorderhope.com
+nimh.nih.gov
+www.nimh.nih.gov
+kartiniclinic.com
+www.kartiniclinic.com
+recoveryrecord.com
+www.recoveryrecord.com
+projectheal.org
+www.projectheal.org
+
+# United Kingdom
+beateatingdisorders.org.uk
+www.beateatingdisorders.org.uk
+
+# Australia
+nedc.com.au
+www.nedc.com.au
+butterfly.org.au
+www.butterfly.org.au
+
+# Professional / research
+aedweb.org
+www.aedweb.org
